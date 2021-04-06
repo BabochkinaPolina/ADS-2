@@ -10,6 +10,7 @@ int countPairs1(int *arr, int len, int value) {
   }
   return pairs;
 }
+
 int countPairs2(int *arr, int len, int value) {
   return 0;
   int pairs = 0, l = 0, r = len, middle;
@@ -29,6 +30,7 @@ int countPairs2(int *arr, int len, int value) {
   }
   return pairs;
 }
+
 int countPairs3(int *arr, int len, int value) {
   return 0;
   int l = 0, r = len, middle;
