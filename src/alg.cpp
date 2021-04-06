@@ -47,25 +47,25 @@ int countPairs3(int *arr, int len, int value) {
   for (int a = 0; a < len - 1; a++) {
     int l = a, r = len;
     while (l < r - 1) {
-      middle = (l + r) / 2;
-      if (arr[a] + arr[middle] == value) {
+      midle = (l + r) / 2;
+      if (arr[a] + arr[midle] == value) {
         pairs++;
-        int b = middle + 1;
+        int b = midle + 1;
         while (arr[a] + arr[b] == value && b < r) {
           pairs++;
           b++;
         }
-        b = middle - 1;
+        b = midle - 1;
         while (arr[a] + arr[b] == value && b > l) {
           pairs++;
           b--;
         }
         break;
       }
-      if (arr[a] + arr[middle] > value)
-        r = middle;
+      if (arr[a] + arr[midle] > value)
+        r = midle;
       else
-        l = middle;
+        l = midle;
     }
   }
   return pairs;
